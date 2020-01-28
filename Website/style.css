@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400 !important;
+    color: rgb(75, 75, 75);
+}
+
+#background {
+    background: linear-gradient(to top left, #9bd9f8 0%, #d374d3 100%);
+    width: 100vw;
+    height: 100vh;
+}
+
+#list-background {
+    background-color: white;
+    
+    width: 375px;
+    height: 500px;
+
+    position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+    
+    margin: auto;
+    
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+#header {
+    text-align: center;
+}
+
+#date {
+    color: #8d6ce1;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 0.9em;
+    margin-top: 1.1em;
+}
+
+#header hr {
+    border: 1px solid rgb(248, 248, 248);
+    margin: 1.1em 0 0;
+}
+
+#list-title {
+    font-weight: 600;
+    font-size: 1.2em;
+    margin-top: 1.3em;
+}
+
+#task-list {
+    display: block;
+    margin: 2em 4em;
+}
+
+#task-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden
+}
+
+#task-list li {
+    float: left;
+    width: 100%;
+}
+
+.list-item-text {
+    display: inline-block;
+    font-weight: 600;
+}
+
+input[type='checkbox'] {
+    position: relative;
+    top: 13.5px;
+    right: calc(-6.5px + 5%);
+    float: right;
+    margin: auto;
+}
+
+label {
+    padding: 10px 0;
+    float: left;
+    width: 90%;
+}
+
+#input-item {
+    position: absolute;
+    bottom: 50px;
+    width: 227px;
+    left: calc(-123.5px + 50%);
+}
+
+#input-item input {
+    width: 100%;
+    height: 20px;
+    border: 0px;
+    background-color: rgb(247, 247, 247);
+    border-radius: 10px;
+    padding: 10px;
+
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    color: rgb(75, 75, 75);
+}
+
+#input-item input:focus{
+    outline: none;
+}
+
+#add-task {
+    position: absolute;
+    background-color: #8554ff;
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    bottom: -2em;
+    left: calc(-2em + 50%);
+    cursor: pointer;
+    
+    -moz-user-select: none; 
+    -webkit-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
+    -o-user-select: none;
+}
+
+#add-task span {
+    position: absolute;
+    bottom: 7px;
+    left: calc(-13.945px + 50%);
+    font-size: 3.1em;
+    color: white;
+}
