@@ -5,7 +5,7 @@ let taskList = document.querySelector('ul');
 let templateListItem = document.querySelector('template');
 let taskListItem = templateListItem.content.querySelector('li');
 
-let inputItem = document.querySelector('#input-item');
+let inputItem = document.querySelector('#text-input');
 let inputTextbox = inputItem.querySelector('input');
 
 let dateDiv = document.querySelector('#date');
