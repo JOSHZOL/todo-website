@@ -94,6 +94,7 @@ body {
     display: inline-block;
     word-wrap: break-word;
     font-weight: 600;
+    font-size: 1em;
 }
 
 input[type='checkbox'] {
@@ -133,7 +134,7 @@ input:checked ~ .better-checkbox {
 
 input:checked ~ label {
     text-decoration: line-through;
-    color: #767678;
+    color: #b6b6b8;
 }
 
 label {
@@ -149,8 +150,8 @@ label {
     background-color: rgb(247, 247, 247);
     border-radius: 10px;
     height: 20px;
-    width: calc(-4em + 90%);
-    padding: 10px 5%;
+    width: calc((100% - 4em) * 0.9);
+    padding: 10px calc((100% - 4em) * 0.05);
 }
 
 #text-input input {
@@ -162,6 +163,7 @@ label {
     font-family: 'Quicksand', sans-serif;
     font-weight: 600;
     color: rgb(75, 75, 75);
+    font-size: 1em;
 }
 
 #text-input input:focus{
