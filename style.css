@@ -14,7 +14,7 @@ body {
 #list-background {
     background-color: white;
     
-    width: 375px;
+    max-width: 375px;
     height: 500px;
 
     position: absolute;
@@ -27,6 +27,12 @@ body {
     
     border-radius: 10px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 405px) {
+    #list-background {
+        margin: auto 15px;
+    }
 }
 
 #header {
