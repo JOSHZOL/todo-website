@@ -98,10 +98,13 @@ body {
 }
 
 .list-item-text {
-    display: inline-block;
     word-wrap: break-word;
     font-weight: 600;
     font-size: 1em;
+
+    padding: 10px 0;
+    float: left;
+    width: calc(100% - 40px);
 }
 
 input[type='checkbox'] {
@@ -142,12 +145,6 @@ input:checked ~ .better-checkbox {
 input:checked ~ label {
     text-decoration: line-through;
     color: #b6b6b8;
-}
-
-label {
-    padding: 10px 0;
-    float: left;
-    width: 85%;
 }
 
 #text-input {
