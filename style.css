@@ -1,5 +1,5 @@
 html {
-    height: 100%;
+    min-height: 100%;
 }
 
 body {
@@ -9,7 +9,7 @@ body {
     color: rgb(75, 75, 75);
 
     background: linear-gradient(to top left, #9bd9f8 0%, #d374d3 100%);
-    min-height: 100%;
+    min-height: 562px;
 }
 
 #list-background {
@@ -33,6 +33,12 @@ body {
 @media screen and (max-width: 405px) {
     #list-background {
         margin: auto 15px;
+    }
+}
+
+@media screen and (max-height: 562px) {
+    #list-background {
+        margin-top: 15px;
     }
 }
 
