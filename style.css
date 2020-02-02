@@ -1,14 +1,15 @@
+html {
+    height: 100%;
+}
+
 body {
     margin: 0;
     font-family: 'Quicksand', sans-serif;
     font-weight: 400 !important;
     color: rgb(75, 75, 75);
-}
 
-#background {
     background: linear-gradient(to top left, #9bd9f8 0%, #d374d3 100%);
-    width: 100vw;
-    height: 100vh;
+    min-height: 100%;
 }
 
 #list-background {
