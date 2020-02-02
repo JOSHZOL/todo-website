@@ -16,13 +16,6 @@ body {
     min-height: 562px;
 }
 
-@media screen and (min-height: 562px) {
-    html, body {
-        position: fixed;
-        overflow: hidden;
-    }
-}
-
 #list-background {
     background-color: white;
     
