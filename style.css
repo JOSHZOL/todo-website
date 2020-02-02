@@ -2,12 +2,16 @@ html {
     min-height: 100%;
 }
 
+html, body {
+    overscroll-behavior: none;
+}
+
 body {
     margin: 0;
     font-family: 'Quicksand', sans-serif;
     font-weight: 400 !important;
     color: rgb(75, 75, 75);
-    background-color: black;
+
     background: linear-gradient(to top left, #9bd9f8 0%, #d374d3 100%);
     min-height: 562px;
 }
