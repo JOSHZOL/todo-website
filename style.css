@@ -172,6 +172,7 @@ input:checked ~ label {
 .delete-button img {
     width: 16px;
     margin: 2px 2px;
+    pointer-events: none;
 }
 
 .list-item:hover .delete-button, .list-item:active .delete-button {

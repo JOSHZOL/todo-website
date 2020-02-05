@@ -43,3 +43,10 @@ function isValid() {
     if (inputTextbox.value !== '')
         return true;
 }
+
+document.addEventListener('click', (e) => {
+    if (e.target && e.target.className == 'delete-button')
+    {
+        e.target.parentNode.remove();
+    }
+})
