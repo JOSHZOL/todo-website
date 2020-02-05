@@ -85,6 +85,7 @@ body {
 }
 
 .list-item {
+    position: relative;
     float: left;
     width: 90%;
     padding: 0 5%;
@@ -104,7 +105,7 @@ body {
 
     padding: 10px 0;
     float: left;
-    width: calc(100% - 40px);
+    width: calc(100% - 50px);
 }
 
 input[type='checkbox'] {
@@ -157,6 +158,28 @@ input:checked ~ label {
     color: #b6b6b8;
 }
 
+.delete-button {
+    transition-duration: 0.2s;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    opacity: 0;
+    right: calc(5% + 0px);
+    top: 10px;
+    cursor: pointer;
+}
+
+.delete-button img {
+    width: 16px;
+    margin: 2px 2px;
+}
+
+.list-item:hover .delete-button, .list-item:active .delete-button {
+    transition-duration: 0.2s;
+    opacity: 1;
+    right: calc(5% + 25px);
+}
+
 #text-input {
     position: absolute;
     bottom: 50px;
@@ -193,12 +216,6 @@ input:checked ~ label {
     bottom: -2em;
     left: calc(-2em + 50%);
     cursor: pointer;
-    
-    -moz-user-select: none; 
-    -webkit-user-select: none; 
-    -ms-user-select: none; 
-    user-select: none;
-    -o-user-select: none;
 }
 
 #add-task span {
@@ -207,4 +224,12 @@ input:checked ~ label {
     left: calc(-13.945px + 50%);
     font-size: 3.1em;
     color: white;
+}
+
+#add-task, .better-checkbox img {
+    -moz-user-select: none; 
+    -webkit-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
+    -o-user-select: none;
 }
